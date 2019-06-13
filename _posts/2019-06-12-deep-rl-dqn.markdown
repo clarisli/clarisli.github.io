@@ -26,9 +26,9 @@ The way an agent chooses an action at each state is called a **policy**. Ultimat
 
 In Q-learning, the goal is to learn the Q function, **Q(s, a)**. Q returns the total rewards for taking the action a at the state s. Note that it's the total rewards of a sequence of states and actions: (s0, a0, r0, s1, a1, r1, s2, a2, r2,...), not only the reward received at the current (s0, a0). 
 
-Suppose there's a function **Q\*(s, a)** that returns the total rewards following an optimal policy. Then getting the largest rewards becomes an easy task, the agent can simply follow a **greedy policy**, choosing the action that maximizes Q\* at each state. But the issue is we don't know the groud truth Q\*.   
+Suppose there's a function **Q\*(s, a)** that returns the total rewards following an optimal policy. Then getting the largest rewards becomes an easy task, the agent can simply follow a **greedy policy**, choosing the action that maximizes Q\* at each state. However, we don't know the groud truth Q\*.   
 
-But we can approximate Q\* instead. Depends on the complexity, the approximation function for Q\* can be in many forms. As simple as a lookup table, or as complex as a deep neural network. For video games, we will use a convolutional neural network that takes in images as input and outputs an estimation of Q value for each action. The goal of this network is to learn Q\*.
+We approximate Q\* instead. Depends on the complexity, the approximation function for Q\* can be in many forms. As simple as a lookup table, or as complex as a deep neural network. For video games, we will use a convolutional neural network that takes in images as input and outputs an estimation of Q value for each action. The goal of this network is to learn Q\*.
 
 Neural networks with more than one hidden layers are called a “deep” neural network. This is where the names of Deep RL and Deep Q-learning (DQN) come from.
 
