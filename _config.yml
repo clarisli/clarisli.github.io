@@ -1,6 +1,6 @@
 name: Claris Li
-description: Stuff I learn
-meta_description: "Claris Li, Stuff I learn"
+description: stuff I learn
+meta_description: "Claris Li, stuff I learn"
 
 markdown: kramdown
 highlighter: pygments
@@ -8,7 +8,7 @@ logo: false
 paginate: 15
 domain_name: 'https://clarisli.github.io/'
 google_analytics: 'UA-141713062-1'
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url:            'https://clarisli.github.io/'
