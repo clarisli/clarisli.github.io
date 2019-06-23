@@ -8,7 +8,7 @@ logo: false
 paginate: 15
 domain_name: 'https://clarisli.github.io/'
 google_analytics: 'UA-141713062-1'
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-seo-tag]
 
 # Details for the RSS feed generator
 url:            'https://clarisli.github.io/'
