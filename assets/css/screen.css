@@ -1774,6 +1774,13 @@ body:not(.post-template) .post-title {
 }
 
 
+img + em {
+    font-style: normal; 
+    font-size: smaller;
+    display: block;
+    text-align: center;
+}
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.

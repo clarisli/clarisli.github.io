@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deep RL: Deep Q-Network DQN"
+title:  "Deep Q-Network DQN"
 date:   2019-06-13 16:29:00 +0800
 categories: [AI]
 disqus: true
