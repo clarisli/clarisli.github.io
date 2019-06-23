@@ -12,7 +12,7 @@ Let’s face it, a fully observable world is too good to be true. In reality, of
 
 ### The Challenge of Partial Observability
 
-When an agent has access to all the information about the environment to make its optimal decision, we call it an **fully observable** environment. This type of environment is often formalized as **Markov decision processes (MDPs)**. For instance, a chess game is fully observable because the player has complete knowledge about the board at any point in time. In MDPs, **Markov property** must hold. David Silver beautifully describe it as ["the future is independent of the past given the present.”]((http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf)) In other words, at every decision point, we have everything we need to know to make the best next move.
+When an agent has access to all the information about the environment to make its optimal decision, we call it an **fully observable** environment. This type of environment is often formalized as **Markov decision processes (MDPs)**. For instance, a chess game is fully observable because the player has complete knowledge about the board at any point in time. In MDPs, **Markov property** must hold. David Silver beautifully describes it as ["the future is independent of the past given the present.”]((http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf)) In other words, at every decision point, we have everything we need to know to make the best next move.
 
 While MDPs are very nice to have, most real-world problems do not fall into this category. An example of partial observability could be a card game with some cards facing down that are unobservable to the player. The player can only see their own cards and the dealer’s face-up cards. Though imperfect, the player has to work with the limited information to make decisions and attempt to win the game. We call this type of environment **Partially-Observable Markov Decision Processes (POMDPs)**.
 
@@ -49,7 +49,7 @@ RNNS are handy for tasks like watching a video or reading a piece of text. For e
 
 ### Deep Recurrent Q-Learning
 
-The idea of **deep recurrent Q-learning (DRQN)** is to combine RNNs with DQNs to deal with the partially observable environment. Note we use **Long Short Term Memory networks (LSTMs)** instead of the vanilla RNNs. LSTMs are the most commonly used type of RNNs. In general, they are the same thing as RNNs, just different in the way how they compute the hidden states, and LSTMs outperform RNNs in learning long-term dependencies. I highly recommend you read Christopher Olah’s [excellent post on LSTMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to understand it.
+The idea of [**deep recurrent Q-learning (DRQN)**](https://arxiv.org/abs/1507.06527) is to combine RNNs with DQNs to deal with the partially observable environment. Note we use **Long Short Term Memory networks (LSTMs)** instead of the vanilla RNNs. LSTMs are the most commonly used type of RNNs. In general, they are the same thing as RNNs, just different in the way how they compute the hidden states, and LSTMs outperform RNNs in learning long-term dependencies. I highly recommend you read Christopher Olah’s [excellent post on LSTMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to understand it.
 
 ### Implementation
 

@@ -13,3 +13,4 @@ plugins: [jekyll-paginate, jekyll-seo-tag]
 # Details for the RSS feed generator
 url:            'https://clarisli.github.io/'
 author:         'Claris Li'
+
