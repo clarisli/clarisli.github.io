@@ -12,3 +12,72 @@
 @import
 	"syntax"
 ;
+
+
+.nav-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    height: 38px;
+    padding: 0 20px;
+    color: #9EABB3;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+}
+
+.nav-item:before {
+    font-size: 9px;
+    margin-right: 6px;
+}
+
+.no-cover .nav-item {
+    background: none;
+}
+
+.no-cover .main-nav.overlay .nav-item:hover {
+    border-color: transparent;
+    background: transparent;
+}
+
+.nav-item:hover {
+    color: #9EABB3;
+}
+
+.no-cover .main-nav.overlay .nav-item {
+    color: rgba(0,0,0,0.4);
+}
+
+@media only screen and (max-width: 500px) {
+
+    .nav-item {
+        height: 44px;
+        line-height: 44px;
+        border-radius: 0;
+        color: #2e2e2e;
+        background: transparent;
+    }
+
+    .nav-item:hover {
+        border-color: #ebeef0;
+        color: #2e2e2e;
+        background: #ebeef0;
+    }
+
+    .nav-item {
+        padding: 0 12px;
+    }
+
+    .no-cover .main-nav.overlay .nav-item {
+        border: none;
+    }
+
+    .main-nav.overlay .nav-item {
+        border-color: transparent;
+    }
+
+}
