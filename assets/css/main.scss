@@ -13,6 +13,8 @@
 	"syntax"
 ;
 
+/*----- Header Nav Items -----*/
+
 
 .nav-item {
     -webkit-box-sizing: border-box;
@@ -80,4 +82,26 @@
         border-color: transparent;
     }
 
+}
+
+
+/*----- Books -----*/
+
+.shelf {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+ 
+.book {
+
+    padding: .5rem;
+    max-width:100%;
+
+}
+
+img {
+    max-width:100%;
 }
