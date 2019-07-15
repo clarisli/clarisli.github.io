@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deep Recurrent Q-Network DRQN"
+title:  "DQN: Deep Recurrent Q-Network DRQN"
 date:   2019-06-23 14:43:00 +0800
 categories: [AI]
 disqus: true
@@ -51,7 +51,6 @@ RNNS are handy for tasks like watching a video or reading a piece of text. For e
 
 The idea of [**deep recurrent Q-learning (DRQN)**](https://arxiv.org/abs/1507.06527) is to combine RNNs with DQNs to deal with the partially observable environment. Note we use **Long Short Term Memory networks (LSTMs)** instead of the vanilla RNNs. LSTMs are the most commonly used type of RNNs. In general, they are the same thing as RNNs, just different in the way how they compute the hidden states, and LSTMs outperform RNNs in learning long-term dependencies. I highly recommend you read Christopher Olah’s [excellent post on LSTMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to understand it.
 
-### Implementation
+### References
 
-I will implement the DRQN algorithm with [TensorFlow](https://www.tensorflow.org/) and [OpenAI Gym](https://gym.openai.com/) in another post.
-
+[1] Hausknecht, M., & Stone, P. (2015). [Deep Recurrent Q-Learning for Partially Observable MDPs.](http://arxiv.org/abs/1507.06527)

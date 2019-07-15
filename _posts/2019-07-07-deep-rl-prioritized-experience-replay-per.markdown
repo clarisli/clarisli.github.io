@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prioritized Experience Replay"
+title:  "DQN: Prioritized Experience Replay"
 date:   2019-07-07 14:21:00 +0800
 categories: [AI]
 disqus: true
@@ -42,7 +42,7 @@ $$ p_i = \frac{1}{rank(i)}$$
 
 where the $$rank(i)$$ is the rank of the experience $$i$$ when the replay memory is sorted by TD errors. 
 
-The hyperparameter $$a$$ controls the randomness involved. Set $$\alpha = 0$$ to do uniform random sampling, and $$\alpha = 1$$ to do greedy prioritization.
+The hyperparameter $$\alpha$$ controls the randomness involved. Set $$\alpha = 0$$ to do uniform random sampling, and $$\alpha = 1$$ to do greedy prioritization.
 
 ### Importance Sampling 
 
@@ -59,7 +59,7 @@ During Q-learning update, we use $$w_i\delta_i$$ instead of $$\delta_i$$ to scal
 The hyperparameter $$\beta$$ controls the level of compensation. When $$\beta = 1$$, the prioritize sampling probabilities are fully compensated. In reinforcement learning, unbiased updates are most important near convergence at the end of the training. We typically set $$\beta$$ close to zero at the beginning of learning, and anneal it up to one over the training. 
 
 
-### Implementation
+### References
 
-I will implement prioritized experience replay with [TensorFlow](https://www.tensorflow.org/) and [OpenAI Gym](https://gym.openai.com/) in another post.
+[1] Schaul, T., Quan, J., Antonoglou, I., & Silver, D. (2015). [Prioritized Experience Replay](http://arxiv.org/abs/1511.05952). 
 

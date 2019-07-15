@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Deep Double Q-Learning"
+title:  "DQN: Deep Double Q-Learning"
 date:   2019-07-01 10:14:00 +0800
 categories: [AI]
 disqus: true
@@ -56,7 +56,6 @@ The same concept can be applied to DQN to reduce overestimations. We call this a
 $$Q_\theta(s, a) = Q_\theta(s, a) + \alpha (R(s, a, s') + \gamma Q_\theta(s’, \max_a Q_{\theta^{-}}(s', a')) - Q_\theta(s, a)))$$
 
 
-### Implementation
+### References
 
-I will implement Double DQN with [TensorFlow](https://www.tensorflow.org/) and [OpenAI Gym](https://gym.openai.com/) in another post.
-
+[1] van Hasselt, H., Guez, A., & Silver, D. (2015). [Deep Reinforcement Learning with Double Q-learning.](https://arxiv.org/abs/1509.06461)
